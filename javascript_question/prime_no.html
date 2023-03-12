@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+    // javascript program to check if a number is a prime number\
+
+//    A prime number is a positive integer that is only divisible by 1 and itself.
+//    for example 2,3,5,7,11 are the first few prime numbers 
+
+//    var number  = prompt("please enter a number");
+//    if (number == 1) {
+//       console.log(`${number} is neither prime nor composite number`);
+
+//    }
+//    else if(number < 1){
+//     console.log(`${number} is not a prime number`);
+//    }
+//    else{
+//         for(var i = 2; i<number; i++ ){
+//             if (number%i == 0) {
+//                 var res = `${number} is not a prime number`;
+//                 break;
+//             }else{
+//                 var res = `${number} is a prime a number `;
+//             }
+//         }
+//         console.log(res);
+//    }
+
+  // Ques 2   javascript program to find largest number among three numbers 
+    // Using Math.max() method
+    // Math.max() returns the largest number among the provided numbers
+      // Math.max(n1,n2,n3);
+      
+    // Using user defined method
+    function check(p,q,r){
+          if (p>=q && p>=r) {
+            return p;
+            
+          }else if(q>=p && q>=r){
+               return q;
+          }else{
+            return r;
+          }
+    }
+    var a = prompt("please enter the first number");
+      var b = prompt("please enter the second number");
+      var c = prompt("please enter the third number");
+    //   var x = Math.max(a,b,c);
+    var x = check(a,b,c);
+    console.log(`${a},${b},${c}: largest = ${x}`);
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+//   ques1.   Swapping using temporary variable.
+     
+      
+    //  var a = prompt('please enter the a value');
+    //  var b = prompt('please enter the b value');
+    //  console.log(`the value of a is: ${a},  the value of b is: ${b}`);
+    //  var temp ;
+    //  temp = a; // 5
+    //  a = b;   // a = 6
+    //  b = temp ;
+    //  console.log(` After Swapping \n the value of a is: ${a},\n the value of b is: ${b}`);
+
+    //2. Swapping without using temporary.
+    // var a = parseInt(prompt('please enter the a value'));
+    //  var b = parseInt(prompt('please enter the b value'));
+    //  console.log(`the value of a is: ${a},  the value of b is: ${b}`);
+    //  a = a+b;
+    //  b = a-b;
+    //  a = a-b;
+    //          console.log(` After Swapping \n the value of a is: ${a},\n the value of b is: ${b}`);
+
+    // 3.convert kms to miles using javascript function 
+
+    //    function convert()
+    //    {
+    //     var kms = document.getElementById('data').value;
+    //     const factor = 0.621371;
+    //     var miles  =kms * factor;
+    //    // document.getElementById('res').innerText = `${miles} miles` ;
+    //    document.getElementById('res').innerText = miles +'Miles';
+    //    }
+
+        // Ques 4 convert celsius to fahrenheit javascript function
+
+        // Formula to be used :
+        // fahrenheit = celsius * 1.8 +32
+    // function convert(){
+    //     var c = document.getElementById('data').value;
+    //    var f  = (c * 1.8)+32;
+    //    document.getElementById('res').innerText  = `${c } c= ${f} f`;
+    // }
+
+    // Ques 5 javascript program to check if a number is positive, negative or zero
+
+    //  * using Math.sign() method.
+
+    function check()
+    {
+        var value = document.getElementById('data').value;
+        //  var res = Math.sign(value);
+        if(value > 0){
+            res = `${value} is Positive number `;
+
+        }
+        else if(value < 0)
+        {
+            res = `${value} is negative number`;
+        }
+        else if(value == 0)
+        {
+            res = `${value} is Zero`;
+        }
+        else{
+            res = `${value} is not a number `;
+        }
+        
+         document.getElementById('res').innerText = res;
+
+    }
+
+
+         
+
+</script>
+<body>
+    <!-- <input type="number" name="" type="any" id="data"/>kms
+    <button onclick="convert()">Convert</button>Miles
+    <h1 id="res"></h1> -->
+    <!-- <input type="" name=""  id="data"/>C
+    <br/>
+    <button onclick="convert()">Convert</button>
+    <h1 id="res"></h1> -->
+    <input type="" name="" id="data"/>
+      <button onclick="check()">check</button>
+      <h1 id="res"></h1>
+</body>
+</html>

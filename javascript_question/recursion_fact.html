@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+       // javascript program to find the factorial of a number using recursion
+    //    this process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called as recursive function.
+     
+       var num = prompt("enter your number");
+       var fact = 1;
+       function factr(n){
+        if (n>num) {
+            return;
+        }
+        fact =  fact * n;
+       
+        n++;
+        factr(n);
+       }
+       factr(1);
+       console.log(`the fact of ${num} is ${fact}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
